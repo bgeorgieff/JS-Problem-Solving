@@ -7,9 +7,14 @@ function solve() {
         let firstLetter = currentInput.value[0].toLocaleLowerCase();
         let firstLetterIndex = listPosition.indexOf(firstLetter);
         let inputPosition  = document.querySelectorAll('li')[firstLetterIndex];
-        inputPosition.innerHTML = currentInput.value;
+        if(inputPosition.innerHTML) {
+        inputPosition.innerHTML +=  `, ` + currentInput.value ;
         currentInput.value = '';
+        } else {
+            inputPosition.innerHTML += currentInput.value;
+            currentInput.value = '';
+        }
     }
-    
+
     button.addEventListener('click', handler);
 }
