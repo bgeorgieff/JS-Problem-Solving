@@ -8,12 +8,11 @@ function solve() {
         let firstLetterIndex = listPosition.indexOf(firstLetter);
         let inputPosition  = document.querySelectorAll('li')[firstLetterIndex];
         if(inputPosition.innerHTML) {
-        inputPosition.innerHTML +=  `, ` + currentInput.value ;
-        currentInput.value = '';
+        inputPosition.innerHTML +=  `, ` + currentInput.value;
         } else {
             inputPosition.innerHTML += currentInput.value;
-            currentInput.value = '';
         }
+        currentInput.value = '';
     }
 
     button.addEventListener('click', handler);
