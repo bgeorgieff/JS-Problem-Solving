@@ -2,8 +2,9 @@
 
 Exam problems for the “JavaScript Advanced” course @ SoftUni. Submit your solutions in the SoftUni Judge system at https://judge.softuni.bg/Contests/Compete/Index/2590#2
 
-Write a class Parking, which implements the following functionality:
-Functionality
+<b>Write a class Parking, which implements the following functionality:
+
+**Functionality**
 constructor ( capacity )  
 Should have these 2 properties:
 capacity – number;
